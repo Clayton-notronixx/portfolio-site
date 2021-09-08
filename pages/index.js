@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
+import {SkillCard} from "../components/SkillCard";
 
 export default function Home() {
   return (
@@ -36,9 +37,37 @@ export default function Home() {
 
               </div>
           </div>
+          <div className={styles.aboutMe}>
+              <div className="container">
+                  <h2>About Me</h2>
+                  <p>Hey I&apos;m Clayton, a passionate self-taught full stack developer, primarily focusing on web and mobile projects. I started in 2011 so I have had plenty of time to
+                  explore several technology options both old and new. I tend to stick with React for both web projects and mobile apps with React Native, depending on the project needs
+                  NextJs is my next go-to which can support larger and more SEO focused clients.</p>
+              </div>
+          </div>
           <div className={styles.topSkills}>
               <div className="container">
-                  <h2>My Favourite Technologies</h2>
+                  <h2>Top Skillsets</h2>
+                  <div className="row">
+                      <div className="col-md-4">
+                          <SkillCard name="React" icon="fab fa-react" subtitle="Web & Native"/>
+                      </div>
+                      <div className="col-md-4">
+                          <SkillCard name="NodeJS" icon="fab fa-node-js"/>
+                      </div>
+                      <div className="col-md-4">
+                          <SkillCard name="AWS" icon="fab fa-aws"/>
+                      </div>
+                      <div className="col-md-4">
+                          <SkillCard name="NextJS"/>
+                      </div>
+                      <div className="col-md-4">
+                          <SkillCard name="SQL"/>
+                      </div>
+                      <div className="col-md-4">
+                          <SkillCard name="CSS & SASS"/>
+                      </div>
+                  </div>
               </div>
           </div>
       </main>
