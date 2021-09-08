@@ -16,7 +16,7 @@ export default function Home() {
               <div className="container">
                   <div className="row">
                       <div className={"col-md-6 " + styles.left}>
-                          <h3>Hey 👋 I'm</h3>
+                          <h3>Hey 👋 I&apos;m</h3>
                           <h1>Clayton Smith</h1>
                           <h4>Full Stack Web & Mobile Developer</h4>
                           <div className={styles.linkRow}>
