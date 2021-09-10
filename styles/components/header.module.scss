@@ -1,0 +1,19 @@
+.header {
+  width: 100vw;
+  position: absolute;
+  padding: 20px 0;
+  text-align: center;
+  //background: var(--primary-color);
+  color: white;
+
+  a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 10px;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

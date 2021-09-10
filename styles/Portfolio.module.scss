@@ -1,0 +1,38 @@
+.hero {
+  background: var(--primary-color);
+  color: white;
+  padding: 100px 20px 50px;
+  margin-bottom: 30px;
+}
+
+.list {
+  padding: 40px 20px;
+}
+
+.item {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  display: block;
+  padding: 0 0 20px;
+  transition: all 1s;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  }
+}
+
+.itemTitle {
+  margin: 20px 20px 0;
+}
+
+.imageContainer {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.contentContainer {
+
+}
