@@ -51,7 +51,7 @@ export async function getStaticProps(context) {
     const {items} = await cfClient.getEntries({
         'content_type': 'portfolioItem',
         'fields.clayton': 'true',
-        'order': 'fields.projectDate'
+        'order': '-fields.projectDate'
     })
     return {
         props: {items},

@@ -59,9 +59,8 @@ const renderOptions = {
 function PortfolioItem(props) {
     const {item} = props;
     if(!item) return <div className="container">Loading</div>
-    const {fields: {title, claytonContent}} = item;
+    const {fields: {title, claytonContent, link}} = item;
     const featureImage = item?.fields.media[0];
-    console.log(featureImage);
     return (
         <div>
             <Head>
@@ -80,12 +79,13 @@ function PortfolioItem(props) {
                     <div className="row">
                         <div className="col-md-6">
                             <div className={styles.imageContainer}>
-                                <Image src={'https:' + featureImage.fields.file.url} alt={featureImage.fields.title} width={500} height={500}  layout="responsive" objectFit="cover"/>
+                                <Image src={'https:' + featureImage.fields.file.url} alt={featureImage.fields.title} width={500} height={500}  layout="responsive" objectFit="contain"/>
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className={styles.contentContainer}>
                                 {documentToReactComponents(claytonContent, renderOptions)}
+                                {link && <a href={link + '?ref=clayton.software'} target="_blank" rel="nofollow noreferrer" className="btn btn-primary">Visit {title}</a>}
                             </div>
                         </div>
                     </div>
